@@ -1,55 +1,38 @@
-# Prerequisites
-*.d
+# Ignore OS files
+.DS_Store
+Thumbs.db
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# KiCad 6/7/8/9 build artefacts
+**/backup/
+**/fpga_project/  # nếu dùng KiCad HDL plugin
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.dcm
+fp-info-cache
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# LTspice / Qucs
+*.raw
+*.log
+*.plt
+*.net
 
-# Precompiled Headers
-*.gch
-*.pch
+# Simulation transient files
+*.wav
+*.vcd
+*.ft
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Synth / FPGA tools
+/work/
+*.rpt
+*.jou
+*.bit
+*.bin
+*.svf
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Python cache
+__pycache__/
+*.pyc
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# IDEs
+.vscode/
+.idea/
